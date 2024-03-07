@@ -1,0 +1,236 @@
+:root {
+    --font-size: 1.3rem;
+    --serif: 'IBM Plex Serif', serif;
+    --sans: 'IBM Plex Sans', sans-serif;
+    --shocking-pink-crayola: #ff69ebff;
+    --persian-pink: #ff86c8ff;
+    --salmon-pink: #ffa3a5ff;
+    --mellow-apricot: #ffbf81ff;
+    --mustard: #ffdc5eff;
+}
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+textarea {
+    white-space: revert;
+}
+
+
+body {
+    font: var(--font-size) var(--serif);
+    background-color: var(--salmon-pink);
+    color: var(--mustard);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+
+a {
+    text-decoration: double rgb(54, 196, 11) 1px underline;
+    color: rgb(255, 255, 255);
+    transition: all 300ms ease-in-out;
+}
+
+a:hover {
+    color: forestgreen;
+    background-color: white;
+    border-radius: 15px;
+    cursor: grab;
+    border: 2px solid grey;
+    text-decoration: none;
+}
+
+#links {
+    display: flex;
+    justify-content: space-between;
+    background-color: plum;
+
+}
+
+.links-name {
+    margin-left: 2%;
+    width: 25%
+}
+
+.links-links {
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links-linkedin a, .links-github a, .links-resume a, .footer-links a {
+    color: black;
+    font-size: 1.3em;
+
+}
+
+.links-linkedin a:hover, .links-github a:hover, .links-resume a:hover, .footer-links a:hover {
+    border: none;
+    border-radius: 0;
+    color: white;
+    background-color: initial;
+}
+
+.fa-fire {
+    color: white;
+    padding-right: 2%;
+}
+
+.links-resume a {
+    text-decoration: none;
+    background-color: magenta;
+    border-radius: 5px;
+    padding: 10% 10%;
+    color: white;
+    font-size: 0.9em;
+}
+
+.links-resume a:hover {
+    background-color: rgb(110, 9, 110);
+}
+
+#intro {
+    padding: .5% 2%;
+    font-size: 1.3em;
+    line-height: 2;
+    background-color: var(--persian-pink);
+}
+
+.name, .institute {
+    color: black;
+    font-family: var(--sans);
+    text-decoration: underline red 1px solid;
+    font-weight: bold;
+}
+
+.name {
+    display: block;
+    font-size: 2em;
+}
+
+#intro div:first-child {
+    line-height: normal;
+}
+
+.about {
+    padding-top: 1%;
+}
+
+#contact {
+    background-color: rgb(192, 22, 192);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(29, 188, 216);
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+
+.contact-heading {
+    font-size: 2em;
+    margin-bottom: 1%;
+}
+
+.contact-text {
+    width: 50%;
+    margin: 1% auto;
+}
+
+.contact-email {
+    margin-top: 2%;
+}
+
+#contact {
+    background-color: rgb(192, 22, 192);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(29, 188, 216);
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+
+.contact-heading {
+    font-size: 2em;
+    margin-bottom: 1%;
+}
+
+.contact-text {
+    width: 50%;
+    margin: 1% auto;
+}
+
+.contact-email {
+    margin-top: 2%;
+}
+
+footer {
+    background-color: rgb(196, 95, 182);
+
+}
+
+*[class*="footer-"] {
+    padding: 2% 0;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(115, 185, 218);
+}
+
+.footer-heading {
+    font-weight: 800;
+    font-size: 1.5em;
+    padding-bottom: 1%;
+}
+
+.footer-copyrights {
+    display: block;
+    padding-top: 1%;
+}
+
+.footer-links a {
+    font-size: 2em;
+    margin: 0 2%;
+}
+
+.footer-links{
+    padding: 1% 0;
+}
+
+
+@media (max-width:850px) {
+    #intro {
+        font-size: 1.1em;
+    }
+
+    #links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links-links {
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+}

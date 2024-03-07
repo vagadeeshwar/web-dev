@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-num {
+    @apply bg-lightgrey hover:bg-buttons-on-hover active:bg-button-active-state w-[24.5%] block py-5 font-semibold text-xl;
+  }
+  .btn-func {
+    @apply bg-function-buttons text-white hover:bg-function-buttons-on-hover active:bg-function-button-active-state w-[24.5%] block py-5 text-xl font-semibold;
+  }
+  .scr {
+    scrollbar-color: white #df974c;
+  }
+}

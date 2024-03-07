@@ -1,0 +1,66 @@
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)){all:unset;display:revert;}
+*,*::before,*::after{box-sizing:border-box;} 
+ol,ul{list-style:none;}
+img{max-width:100%;}
+table{border-collapse:collapse;}
+textarea{white-space:revert;}
+
+body{
+    font: 1rem 'Open Sans', sans;
+    
+}
+
+h1{
+    text-align: center;
+    text-decoration: solid 1px underline red;
+    letter-spacing: 0.1em;
+    font: bold 4em 'Open Sans', sans;
+    
+}
+
+nav{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid olive;
+}
+
+ul{
+    display: flex;
+    flex:2;
+    justify-content: space-evenly;
+}
+
+a{
+    color: blue;
+}
+
+nav>a{
+    flex:1;
+}
+
+.sign-up{
+    text-align: right;
+}
+
+a:hover{
+    text-decoration: dashed red 1px underline;
+    border: 1px solid peru;
+}
+
+@media (max-width:768px){
+    h1{
+        font-size: 3em;
+    }
+
+    nav, ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:576px) {
+    h1{
+        font-size: 2.5em;
+    }
+}

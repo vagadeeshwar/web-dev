@@ -1,0 +1,168 @@
+:root {
+    --font-size: 0.7rem;
+    --serif: 'IBM Plex Serif', serif;
+    --sans: 'IBM Plex Sans', sans-serif;
+    --shocking-pink-crayola: #ff69ebff;
+    --persian-pink: #ff86c8ff;
+    --salmon-pink: #ffa3a5ff;
+    --mellow-apricot: #ffbf81ff;
+    --mustard: #ffdc5eff;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+    height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+    isolation: isolate;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font: 1.3rem var(--serif);
+    background-color: var(--salmon-pink);
+    color: white;
+
+    /* justify-content: space-evenly; */
+}
+
+h1 {
+    font: bold 5em var(--sans);
+    width: 100%;
+    /* height: 20%; */
+    padding: 1%;
+    text-align: center;
+    text-decoration: underline rgb(223, 11, 15) wavy 2px;
+}
+
+section {
+    width: 100%;
+    /* height: 80%; */
+    display: flex;
+    flex-flow: row wrap;
+    border: thin solid black;
+    margin: 0 1%;
+}
+
+article, nav {
+    width: 25%;
+    /* height: 50%; */
+    display: flex;
+    flex-flow: column;
+    /* align-content:stretch; */
+    justify-content: stretch;
+    border: solid black;
+    border-width: 0.2rem 0.05rem;
+}
+
+
+h2 {
+    /* height: 20%; */
+    letter-spacing: 0.1rem;
+    font: 500 2.5em var(--sans);
+    text-align: center;
+    color: black;
+}
+
+p {
+    /* height: 20%; */
+    margin: 1% 1%;
+}
+
+p.puppies-are-adorable {
+    /* height: 30%; */
+}
+
+img {
+    /* height: 20%; */
+    margin:1%;
+}
+
+div {
+    flex-grow: 1;
+    /* height: auto; */
+    padding: 1%;
+}
+
+.puppies-are-adorable {
+    width: 50%;
+}
+
+nav {
+    width: 75%;
+    color: black;
+    font: 1.3em arial;
+}
+
+.politics{
+    background-color: green;
+}
+
+.technology{
+    background-color: palevioletred;
+}
+
+.local{
+    background-color: aquamarine;
+}
+
+.opinion{
+    background-color: rebeccapurple;
+}
+
+.sports{
+    background-color: slategray;
+}

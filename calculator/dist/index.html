@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="flex h-screen items-center justify-center font-mono bg-green-500">
+    <div class="w-[400px] flex-col border-8 bg-black text-black gap-y-0.5 flex border-slate-600 rounded-2xl">
+        <div id="calc-area"
+            class="overflow-x-auto text-right text-white py-5 pr-2 bg-function-buttons scroll-thumb:text-white scroll-track:text-function-buttons scr">
+            0</div>
+        <div class="flex justify-between">
+            <button class="btn-num w-[49.67%]">C</button>
+            <button class="btn-num ">&larr;</button>
+            <button class="btn-func">&divide;</button>
+        </div>
+        <div class="flex justify-between">
+            <button class="btn-num">7</button>
+            <button class="btn-num">8</button>
+            <button class="btn-num">9</button>
+            <button class="btn-func">&times;</button>
+        </div>
+        <div class="flex justify-between">
+            <button class="btn-num">4</button>
+            <button class="btn-num">6</button>
+            <button class="btn-num">5</button>
+            <button class="btn-func">&minus;</button>
+        </div>
+        <div class="flex justify-between">
+            <button class="btn-num">1</button>
+            <button class="btn-num">2</button>
+            <button class="btn-num">3</button>
+            <button class="btn-func">&plus;</button>
+        </div>
+        <div class="flex justify-between">
+            <button class="btn-num w-[74.83%]">0</button>
+            <button class="btn-func">&equals;</button>
+        </div>
+    </div>
+</body>
+<script src="../src/index.js"></script>
+
+</html>

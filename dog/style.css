@@ -1,0 +1,98 @@
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+table {
+  border-collapse: collapse;
+}
+textarea {
+  white-space: revert;
+}
+
+:root {
+  --black: #73020c;
+  --blue: #0487d9;
+  --light-blue: #04b2d9;
+  --light-green: #04bfad;
+  --white: #d8d9d7;
+}
+
+body {
+  background-color: var(--black);
+}
+
+button {
+  display: block;
+  border: 2px solid var(--light-blue);
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 10%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  transition: color 300ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  cursor: grab;
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+button:active {
+  cursor: progress;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 10px;
+  margin: 10px 0;
+}
+
+.giphy-show {
+  display: contents;
+}
+
+label,
+select {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 18%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  color: var(--white);
+}
+
+select {
+  background-color: var(--black);
+  border: var(--blue) 2px groove;
+  color: var(--light-green);
+  border-radius: 3px;
+  transition: all 500ms ease-in-out;
+}
+
+select:hover {
+  border: var(--white) 4px ridge;
+  cursor: grab;
+  color: var(--light-blue);
+}
